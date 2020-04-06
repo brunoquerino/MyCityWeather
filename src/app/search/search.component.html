@@ -1,0 +1,40 @@
+<div class="container search">
+    <form>
+<div class="form-group ">
+    <label for="cityName" class="search-label">Search for your city</label>
+    <input type="text" class="form-control searchInput" 
+                name="cityname" #cityName>
+</div>
+
+<button class="btn btn-primary" 
+            type="button" (click)="onSubmitDatabinding(cityName.value)">Search</button>
+
+            
+</form>
+
+<div class="card weather-card mt-3" *ngIf="undefined!==weather">
+
+  <!-- Card content -->
+  <div class="card-body pb-3">
+
+    <!-- Title -->
+    <h4 class="card-title font-weight-bold">{{weather.city}}</h4>
+    <!-- Text -->
+    <p class="card-text">{{weather.date}}</p>
+    <div class="d-flex justify-content-between">
+      <p class="display-1 degree">{{weather.temp}}°</p>
+      <i class="fas fa-sun-o fa-5x pt-3 amber-text"></i>
+    </div>
+    <div class="d-flex justify-content-between mb-4">
+      <p><i class="fas fa-tint fa-lg text-info pr-2"></i>{{weather.descr}}</p>
+      <p><i class="fas fa-leaf fa-lg grey-text pr-2"></i>{{weather.windspeed}} km/h Winds</p>
+    </div>
+
+
+    
+
+  </div>
+
+</div>
+</div>
+
