@@ -6,7 +6,6 @@ My City Weather- Web app which will allow the users to search for the current we
 2. `npm install -g @angular/cli`
 3. `npm install`
 
-## Running the Samples
-
+## Running
 1. `ng serve`
 2. open [http://localhost:4200/](http://localhost:4200/)
